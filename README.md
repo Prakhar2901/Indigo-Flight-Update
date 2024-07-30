@@ -12,23 +12,27 @@ Project Structure-
 
 2.Backend Files:
 
-server.js: The Node.js server file that handles API requests and email notifications.
+- server.js: The Node.js server file that handles API requests and email notifications.
 
 3.Data:
 
-flights.json: Contains the data of flights.
+- flights.json: Contains the data of flights.
 
 Screenshot 1:
-![I1](https://github.com/user-attachments/assets/38263d54-746e-4722-bd89-551150592ce7)
 
 - The frontend allows users to enter either a flight number or flight name into the search bar, and upon clicking the search button, it displays the details of the matching flights. The header features the Indigo logo as well.
 
 
+![I1](https://github.com/user-attachments/assets/38263d54-746e-4722-bd89-551150592ce7)
+
+
 Screenshot 2:
+
+
+- After clicking the search button, the flight information section, which is initially hidden, is revealed and populated with the relevant flight details.
 
 ![I2](https://github.com/user-attachments/assets/2f5741d9-5d4e-4a0a-ba53-724703f68523)
 
-- After clicking the search button, the flight information section, which is initially hidden, is revealed and populated with the relevant flight details.
 
 
 Working-
@@ -53,8 +57,8 @@ Backend:-
 - JSON body parsing is configured to handle incoming requests.
 
 2.Flight Data Handling:
--The server reads the flight data from flights.json using the fs module.
--The flight data is served through a GET request to /api/flights.
+- The server reads the flight data from flights.json using the fs module.
+- The flight data is served through a GET request to /api/flights.
 
 3.Flight Status Check:
 - A POST request to /api/check-flight checks the status of a specified flight.
