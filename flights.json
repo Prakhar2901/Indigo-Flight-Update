@@ -1,0 +1,82 @@
+[
+  {
+    "airline": "Airline A",
+    "flightNumber": "A1",
+    "status": "On Time",
+    "gate": "A1",
+    "time": "10:00 AM",
+    "destination": "New York"
+  },
+  {
+    "airline": "Airline B",
+    "flightNumber": "B1",
+    "status": "Delayed",
+    "gate": "B2",
+    "time": "11:00 AM",
+    "destination": "Los Angeles"
+  },
+  {
+    "airline": "Airline C",
+    "flightNumber": "C1",
+    "status": "On Time",
+    "gate": "C3",
+    "time": "12:00 PM",
+    "destination": "Chicago"
+  },
+  {
+    "airline": "Airline D",
+    "flightNumber": "D1",
+    "status": "Delayed",
+    "gate": "D4",
+    "time": "01:00 PM",
+    "destination": "Houston"
+  },
+  {
+    "airline": "Airline E",
+    "flightNumber": "A2",
+    "status": "On Time",
+    "gate": "E5",
+    "time": "02:00 PM",
+    "destination": "San Francisco"
+  },
+  {
+    "airline": "Airline F",
+    "flightNumber": "B2",
+    "status": "Delayed",
+    "gate": "F6",
+    "time": "03:00 PM",
+    "destination": "Miami"
+  },
+  {
+    "airline": "Airline G",
+    "flightNumber": "C2",
+    "status": "On Time",
+    "gate": "G7",
+    "time": "04:00 PM",
+    "destination": "Seattle"
+  },
+  {
+    "airline": "Airline H",
+    "flightNumber": "D2",
+    "status": "Delayed",
+    "gate": "H8",
+    "time": "05:00 PM",
+    "destination": "Atlanta"
+  },
+  {
+    "airline": "Airline I",
+    "flightNumber": "A3",
+    "status": "On Time",
+    "gate": "I9",
+    "time": "06:00 PM",
+    "destination": "Dallas"
+  },
+  {
+    "airline": "Airline J",
+    "flightNumber": "B3",
+    "status": "On Time",
+    "gate": "J10",
+    "time": "07:00 PM",
+    "destination": "Boston"
+  }
+]

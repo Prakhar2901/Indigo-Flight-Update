@@ -1,0 +1,121 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #e4ecf2;
+  color: #333;
+}
+
+header {
+  background-color: #ffffff;
+  color: rgb(5, 5, 5);
+  padding: 20px 0;
+  border-radius: 0 0 20px 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.heading {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.heading-container {
+  text-align: center; /* Center the heading */
+  margin: 20px 0; /* Adjust spacing as needed */
+}
+
+.flight-update-heading {
+  font-size: 1.5rem; /* Adjust font size as needed */
+  color: #333; /* Adjust color as needed */
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.search-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#search-bar {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+#search-btn {
+  padding: 10px 20px;
+  background-color: #2db3fe;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+#search-btn:hover {
+  background-color: #007bb5;
+}
+
+.flight-info {
+  background: rgb(255, 255, 255); /* Semi-transparent white background */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 
+              0 4px 8px rgba(0, 0, 0, 0.1) inset, 
+              0 6px 20px rgba(0, 0, 0, 0.19); /* Enhanced shadows for 3D effect */
+  backdrop-filter: blur(10px); /* Glass effect with blur */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: add border to enhance the glass effect */
+}
+
+
+.flight-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.flight-list li {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.flight-list li:last-child {
+  border-bottom: none;
+}
+/* Add this to your style.css */
+.flight-info {
+  display: none; /* Hide the section initially */
+}
+
+.flight-info.show {
+  display: block; /* Show the section when needed */
+}
