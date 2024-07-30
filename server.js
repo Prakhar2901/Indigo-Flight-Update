@@ -1,4 +1,3 @@
-// Import necessary modules
 const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
@@ -6,13 +5,11 @@ const path = require('path');
 const nodemailer = require('nodemailer');
 const kafka = require('kafka-node');
 
-// Create an Express application
 const app = express();
 
-// Set the port number
 const port = 5500;
 
-// Use CORS to allow cross-origin requests
+// Using CORS to allow cross-origin requests
 app.use(cors());
 app.use(express.json()); // Add this to parse JSON request bodies
 
