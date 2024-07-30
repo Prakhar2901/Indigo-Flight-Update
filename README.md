@@ -21,7 +21,7 @@ flights.json: Contains the data of flights.
 Screenshot 1:
 ![I1](https://github.com/user-attachments/assets/38263d54-746e-4722-bd89-551150592ce7)
 
--The frontend allows users to enter either a flight number or flight name into the search bar, and upon clicking the search button, it displays the details of the matching flights. The header features the Indigo logo as well.
+- The frontend allows users to enter either a flight number or flight name into the search bar, and upon clicking the search button, it displays the details of the matching flights. The header features the Indigo logo as well.
 
 
 Screenshot 2:
