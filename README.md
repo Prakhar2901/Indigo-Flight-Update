@@ -5,14 +5,17 @@ This project is a web application that provides real-time flight status updates 
 Project Structure-
 
 1.Frontend Files:
+
 file.html: The main HTML file for the user interface.
 style.css: The CSS file for styling the web page.
 script.js: The JavaScript file for handling search functionality and API interactions.
 
 2.Backend Files:
+
 server.js: The Node.js server file that handles API requests and email notifications.
 
 3.Data:
+
 flights.json: Contains the data of flights.
 
 Screenshot 1:
@@ -31,16 +34,19 @@ Screenshot 2:
 Working-
 
 Frontend:-
+
 1.Search Functionality:
 -Users can enter either a flight number or flight name into the search bar.
 -Upon clicking the "Search" button, the searchFlight() function is triggered.
 
 2.Displaying Flight Information:
+
 -The searchFlight() function makes a GET request to the backend API (/api/flights) to fetch the flight data from flights.json.
 -The flight information section (flight-info) is initially hidden. It is revealed and populated with the relevant flight details only after the search button is clicked.
 -The search results are displayed in a list format, and if any of the flights are delayed, an email notification is triggered.
 
 Backend:-
+
 1.Server Setup:-
 -The backend is powered by an Express server.
 -CORS is enabled to handle cross-origin requests.
@@ -57,11 +63,13 @@ Backend:-
 #NOTE : The Kafka integration did not work as expected, so the logic for handling flight notifications was implemented directly in the code. However, this implementation also encountered issues and was not executed properly. Despite these challenges, the flight details are displayed correctly as shown in the provided screenshots.
 
 4.Kafka Integration:
+
 -Kafka is used for messaging and email notifications.
 -Producer: Sends messages to Kafka when a flight is delayed.
 -Consumer: Listens for messages on the Kafka topic and sends email notifications for delayed flights.
 
 5.Email Notifications:
+
 -The nodemailer module is used to send email notifications.
 -When a message is received from Kafka indicating a flight delay, an email is sent to the provided email address with the flight status.
 
