@@ -6,9 +6,9 @@ Project Structure-
 
 1.Frontend Files:
 
-file.html: The main HTML file for the user interface.
-style.css: The CSS file for styling the web page.
-script.js: The JavaScript file for handling search functionality and API interactions.
+- file.html: The main HTML file for the user interface.
+- style.css: The CSS file for styling the web page.
+- script.js: The JavaScript file for handling search functionality and API interactions.
 
 2.Backend Files:
 
@@ -36,43 +36,43 @@ Working-
 Frontend:-
 
 1.Search Functionality:
--Users can enter either a flight number or flight name into the search bar.
--Upon clicking the "Search" button, the searchFlight() function is triggered.
+- Users can enter either a flight number or flight name into the search bar.
+- Upon clicking the "Search" button, the searchFlight() function is triggered.
 
 2.Displaying Flight Information:
 
--The searchFlight() function makes a GET request to the backend API (/api/flights) to fetch the flight data from flights.json.
--The flight information section (flight-info) is initially hidden. It is revealed and populated with the relevant flight details only after the search button is clicked.
--The search results are displayed in a list format, and if any of the flights are delayed, an email notification is triggered.
+- The searchFlight() function makes a GET request to the backend API (/api/flights) to fetch the flight data from flights.json.
+- The flight information section (flight-info) is initially hidden. It is revealed and populated with the relevant flight details only after the search button is clicked.
+- The search results are displayed in a list format, and if any of the flights are delayed, an email notification is triggered. The flight details are shown with a 3D effect glass background, designed using CSS to provide a visually appealing and modern look.
 
 Backend:-
 
 1.Server Setup:-
--The backend is powered by an Express server.
--CORS is enabled to handle cross-origin requests.
--JSON body parsing is configured to handle incoming requests.
+- The backend is powered by an Express server.
+- CORS is enabled to handle cross-origin requests.
+- JSON body parsing is configured to handle incoming requests.
 
 2.Flight Data Handling:
 -The server reads the flight data from flights.json using the fs module.
 -The flight data is served through a GET request to /api/flights.
 
 3.Flight Status Check:
--A POST request to /api/check-flight checks the status of a specified flight.
--If the flight is delayed, a message is sent to a Kafka topic (flight-email-notifications).
+- A POST request to /api/check-flight checks the status of a specified flight.
+- If the flight is delayed, a message is sent to a Kafka topic (flight-email-notifications).
 
 #NOTE : The Kafka integration did not work as expected, so the logic for handling flight notifications was implemented directly in the code. However, this implementation also encountered issues and was not executed properly. Despite these challenges, the flight details are displayed correctly as shown in the provided screenshots.
 
 4.Kafka Integration:
 
--Kafka is used for messaging and email notifications.
--Producer: Sends messages to Kafka when a flight is delayed.
--Consumer: Listens for messages on the Kafka topic and sends email notifications for delayed flights.
+- Kafka is used for messaging and email notifications.
+- Producer: Sends messages to Kafka when a flight is delayed.
+- Consumer: Listens for messages on the Kafka topic and sends email notifications for delayed flights.
 
 5.Email Notifications:
 
--The nodemailer module is used to send email notifications.
--When a message is received from Kafka indicating a flight delay, an email is sent to the provided email address with the flight status.
+- The nodemailer module is used to send email notifications.
+- When a message is received from Kafka indicating a flight delay, an email is sent to the provided email address with the flight status.
 
 Data File:-
--flights.json: Contains flight data used by the backend to respond to API requests and check flight statuses.
+- flights.json: Contains flight data used by the backend to respond to API requests and check flight statuses.
 
